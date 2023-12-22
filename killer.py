@@ -2,6 +2,15 @@ import pandas as pd
 import numpy as np 
 import streamlit as st
 import math
+import subprocess
+
+# Install 'lxml' using pip when the script starts
+try:
+    subprocess.run(['pip', 'install', 'lxml'], check=True)
+    print("lxml installed successfully!")
+except subprocess.CalledProcessError as e:
+    print("Error installing lxml:", e)
+
 # Dictionary with teams categorized by league
 leagues_with_urls = {
     'Premier League': {
