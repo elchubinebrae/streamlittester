@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np 
 import streamlit as st
 import math
-!pip install lxml
-import lxml
+from xml import lxml
 # Dictionary with teams categorized by league
 leagues_with_urls = {
     'Premier League': {
