@@ -2,6 +2,12 @@ import pandas as pd
 import numpy as np 
 import streamlit as st
 import math
+import subprocess
+import sys
+
+# Install 'lxml' if not already installed
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 'lxml'])
+
 import lxml 
 # Dictionary with teams categorized by league
 leagues_with_urls = {
